@@ -26,11 +26,14 @@ dependencies {
     // working with CSV files
     // https://github.com/eugenp/tutorials/tree/master/libraries-apache-commons-io
     implementation 'org.apache.commons:commons-csv:1.9.0'
+    implementation fileTree(dir: 'jar', include: '*.jar')
+    implementation 'org.apache.poi:poi:5.2.1'
+
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'de.buw.se4de.App'
+    mainClass = 'de.buw.se4de.EcommerceApp'
 }
 
 run {
